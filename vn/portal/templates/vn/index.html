@@ -7,29 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
   	<!-- <script type="text/javascript" src="vn.js"></script>  -->
 </head>
-<body>
 <div>
-	<div class="animate-button desktop-only">
-		<div class="animate-button-menu shift">
-			<ul class="link">
-				<li class="animate-menu"><a href="">Home</a></li>
-				<li class="animate-menu"><a href="">About Us</a></li>
-				<li class="animate-menu"><a href="">Events</a></li>
-				<li class="animate-menu"><a href="">Haute Couture</a></li>
-				<li class="animate-menu"><a href="">State of Dress</a></li>
-				<li class="animate-menu"><a href="">Glamour Nova</a></li>
-				<li class="animate-menu"><a href="">Style Gallery</a></li>
-				<li class="animate-menu"><a href="">Our Team</a></li>
-				<li class="animate-menu"><a href="">Get in Touch</a></li>
-			</ul>
-		</div>
-		<div class="animate-button-cross-bg arrow">
-			<div class="animate-button-symbol">
-				<div class="line line-1-arrow"></div>
-				<div class="line line-2-arrow"></div>
-			</div>
-		</div>
-	</div>
 	<div class="header">
 <!--		<img id="Ntopbg" class="Ntopbg" src="{% static 'images/Ntopbg.svg' %}">-->
 		<img id="Ntopbg" class="Ntopbg" src="{% static 'images/Topbg.webp' %}">
@@ -75,41 +53,59 @@
 		</div>
 	</div>
 </div>
+	<!--SARTHAK's CODE-->
 	<div class="N-container">
-<!--		<img class="hc" src="{% static 'images/hc.svg' %}">-->
-		<img class="N" src="{% static 'images/NN.webp' %}">
-		<a class="hc-a"></a>
-		<div class="hc">HAUTE COUTURE</div>
-		<a class="ds-a"></a> <!-- this is anchor tag which is on top of the image, i will access this and clip it -->
-		<div class="ds">STATES OF<br>DRESS</div>
-		<a class="gn-a"></a>
-		<div class="gn">GLAMOUR<br>NOVA</div>
+      <!-- starting of images container -->
+      <section class="header-section-2">
+        <div class="header-img-container relative">
+          <div class="cont-1 relative">
+            <img
+              class="lady-img"
+              src="{% static 'images/hc.webp' %}"
+              alt="lady-img"
+            />
+              <p class="hc-header event-header">HAUTE COUTURE</p>
+<!--             <img class="small-V1" src="images/V.webp">-->
+<!--             <img class="small-N1" src="images/N.webp">-->
+          </div>
+          <div class="cont-2">
+            <img class="guy-1" src="{% static 'images/gn.webp' %}" alt="" />
+              <p class="gn-header event-header">GLAMOUR<br>NOVA</p>
+            <img class="guy-2" src="{% static 'images/ds.webp' %}" alt="" />
+              <p class="ds-header event-header">STATES<br>OF DRESS</p>
 
-<!--		<img class="gn" src="{% static 'images/gn.svg' %}">-->
-		<img class="small-V" src="{% static 'images/V.webp' %}">
-		<img class="small-N" src="{% static 'images/N.webp' %}">
+                     <div class="ds-info">
+                <img loading="lazy" class="ds-logo" src="{% static 'images/ds-logo.webp' %}">
+                <div class="ds-heading ">State of Dress</div>
+                <div class="event-text ">States of Dress, where you let your <br>creativity run wild as you design the best <br>outfit for your friend using only paper.<br>Put your origami and fashion skills to use <br>and come up with the perfect dress.</div>
+		    </div>
 
-		<div class="hc-info">
-			<img loading="lazy" class="hc-logo" src="{% static 'images/hc-logo.webp' %}">
-			<div class="hc-heading ">Haute Couture</div>
-<!--			<img class="event-text" src="{% static 'images/hc-text.png' %}">-->
-			<div class="event-text ">Haute Couture, where the most <br>glamorous people show off their skills as <br>hey walk the ramp and evoking all those <br>creative people out there to put on their <br>thinking caps and come out with the most <br>innovative theme-based fashion show.</div>
-		</div>
+		    <div class="gn-info">
+                <img loading="lazy" class="gn-logo" src="{% static 'images/gn-logo.webp' %}">
+                <div class="gn-heading ">Glamour Nova</div>
+                <div class="event-text ">Glamour Nova, where the most <br>glamorous people show off their skills as <br>they do elegant photoshoots at exotic <br>locations of one of the most beautiful <br>colleges in India<br>IIT Guwahati</div>
+		    </div>
+          </div>
+            <img class="small-V" src="{% static 'images/V.webp' %}">
+            <img class="small-N" src="{% static 'images/N.webp' %}">
+            <div class="hc-info">
+                <img loading="lazy" class="hc-logo" src="{% static 'images/hc-logo.webp' %}">
+                <div class="hc-heading ">Haute Couture</div>
+    <!--			<img class="event-text" src="images/hc-text.png">-->
+                <div class="event-text ">Haute Couture, where the most <br>glamorous people show off their skills as <br>hey walk the ramp and evoking all those <br>creative people out there to put on their <br>thinking caps and come out with the most <br>innovative theme-based fashion show.</div>
+		     </div>
+        </div>
+        <!-- <img class="small-V" src="./images/V.svg" />
+      <img class="small-N" src="./images/N.svg" />
 
-		<div class="ds-info">
-			<img loading="lazy" class="ds-logo" src="{% static 'images/ds-logo.webp' %}">
-			<div class="ds-heading ">State of Dress</div>
-			<div class="event-text ">States of Dress, where you let your <br>creativity run wild as you design the best <br>outfit for your friend using only paper.<br>Put your origami and fashion skills to use <br>and come up with the perfect dress.</div>
-		</div>
+      <div class="hc-info">
+        <img class="hc-logo" src="./images/hc-logo.svg" />
+        <h2 class="hc-heading text-center">Haute Couture</h2> -->
+      </section>
 
-		<div class="gn-info">
-			<img loading="lazy" class="gn-logo" src="{% static 'images/gn-logo.webp' %}">
-			<div class="gn-heading ">Glamour Nova</div>
-			<div class="event-text ">Glamour Nova, where the most <br>glamorous people show off their skills as <br>they do elegant photoshoots at exotic <br>locations of one of the most beautiful <br>colleges in India<br>IIT Guwahati</div>
-		</div>
-	</div>
+    </div>
 </div>
-<script src="{% static 'js/animate-menu.js' %}"></script>
-<script src="{% static 'js/newscroll.js' %}"></script>
+<script src="js/animate-menu.js"></script>
+<script src="js/newscroll.js"></script>
 </body>
 </html>
